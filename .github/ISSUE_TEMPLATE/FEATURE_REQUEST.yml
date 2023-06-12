@@ -1,0 +1,43 @@
+name: 'Feature Request'
+description: Suggest a feature for Huddlify
+
+body:
+  - type: dropdown
+    id: affected-packages
+    attributes:
+      label: Which Huddlify components are relevant/related to the feature request?
+      options:
+        - front end
+        - profile
+        - workspaces
+        - rooms
+        - dialogs
+        - settings
+        - reporting
+        - analytics
+        - language-service
+        - localisation
+        - user experience
+        - communications (email, text, PN)
+      multiple: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: true
